@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MP | Sweet Treats</title>
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- =========================================================
+     NAVBAR
+========================================================= -->
+
+<header class="navbar">
+
+    <div class="logo">
+        <span>MP</span> | Sweet Treats
+    </div>
+
+    <button class="hamburger" id="hamburgerBtn">
+        <i class="fa-solid fa-bars"></i>
+    </button>
+
+    <nav id="navMenu">
+
+        <a href="#home">Home</a>
+        <a href="#wedding-cakes">Wedding Cakes</a>
+        <a href="#birthday-cakes">Birthday Cakes</a>
+        <a href="#graduation-cakes">Graduation Cakes</a>
+        <a href="#cookies">Cookies</a>
+        <a href="#custom-orders">Custom Orders</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#about">About Us</a>
+
+        <a href="#" id="cartIcon">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span id="cartCount" class="cart-count">0</span>
+        </a>
+
+    </nav>
+
+</header>
+
+
+<!-- =========================================================
+     HERO
+========================================================= -->
+
+<section class="hero" id="home">
+
+    <div class="hero-images">
+
+        <figure class="hero-img">
+            <img src="wedding.jpeg" alt="Wedding cake">
+            <figcaption>Wedding Cakes</figcaption>
+        </figure>
+
+        <figure class="hero-img">
+            <img src="birthday.jpeg" alt="Birthday cake">
+            <figcaption>Birthday Cakes</figcaption>
+        </figure>
+
+        <figure class="hero-img">
+            <img src="graduation.jpeg" alt="Graduation cake">
+            <figcaption>Graduation Cakes</figcaption>
+        </figure>
+
+        <figure class="hero-img">
+            <img src="cookies.jpeg" alt="Cookies">
+            <figcaption>Cookies</figcaption>
+        </figure>
+
+    </div>
+
+    <div class="hero-text">
+
+        <h1>
+            Cakes by MP - Making Your Sweetest Moments Even Sweeter
+        </h1>
+
+        <a href="#custom-orders" class="btn-explore">
+            Explore Custom Orders
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     PRODUCT CARDS
+========================================================= -->
+
+<section class="product-cards">
+
+    <!-- BIRTHDAY -->
+
+    <div class="card" id="birthday-cakes">
+
+        <img src="birthday-cakes.jpeg" alt="Birthday Cakes">
+
+        <div class="card-body">
+
+            <div class="card-title-row">
+
+                <h3>Birthday Cakes</h3>
+
+                <span class="rating">
+                    <i class="fa-solid fa-star"></i> 4.8/5
+                </span>
+
+            </div>
+
+            <p class="card-desc">
+                Happy birthday cake
+            </p>
+
+            <p class="card-price">
+                Price from: TZS 45,000
+            </p>
+
+            <button
+                class="btn-card add-to-cart"
+                data-name="Birthday Cake"
+                data-price="45000">
+
+                Shop Now
+
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- GRADUATION -->
+
+    <div class="card" id="graduation-cakes">
+
+        <img src="graduu-cake.jpeg" alt="Graduation Cakes">
+
+        <div class="card-body">
+
+            <div class="card-title-row">
+
+                <h3>Graduation Cakes</h3>
+
+                <span class="rating">
+                    <i class="fa-solid fa-star"></i>
+                </span>
+
+            </div>
+
+            <p class="card-desc">
+                Graduation cake
+            </p>
+
+            <p class="card-price">
+                Price: TZS 45,000
+            </p>
+
+            <button
+                class="btn-card add-to-cart"
+                data-name="Graduation Cake"
+                data-price="45000">
+
+                Shop Now
+
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- WEDDING -->
+
+    <div class="card" id="wedding-cakes">
+
+        <img src="weddie-cake.jpeg" alt="Wedding Cakes">
+
+        <div class="card-body">
+
+            <div class="card-title-row">
+
+                <h3>Wedding Cakes</h3>
+
+                <span class="rating">
+                    <i class="fa-solid fa-star"></i>
+                </span>
+
+            </div>
+
+            <p class="card-desc">
+                Elegant wedding cake with tiers, detailed decoration
+                and elegant colors for customization.
+            </p>
+
+            <p class="price">TZS 60,000</p>
+
+            <button class="btn-card add-to-cart"
+        data-name="Wedding Cake"
+        data-price="60000">
+    Shop Now
+</button>
+
+        </div>
+
+    </div>
+
+
+    <!-- COOKIES -->
+
+    <div class="card" id="cookies">
+
+        <img src="cookie.jpeg" alt="Freshly Baked Cookies">
+
+        <div class="card-body">
+
+            <div class="card-title-row">
+
+                <h3>Freshly Baked Cookies</h3>
+
+                <span class="rating">
+                    <i class="fa-solid fa-star"></i>
+                </span>
+
+            </div>
+
+            <p class="card-desc">
+                Freshly baked cookies
+            </p>
+
+            <p class="card-price">
+                Price per dozen: TZS 15,000
+            </p>
+
+            <button
+                class="btn-card add-to-cart"
+                data-name="Cookies (dozen)"
+                data-price="15000">
+
+                Order Cookies
+
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- CUSTOM ORDERS -->
+
+    <div class="card" id="custom-orders">
+
+        <img src="custom-cake.jpeg" alt="Custom Creations">
+
+        <div class="card-body">
+
+            <div class="card-title-row">
+
+                <h3>Custom Creations</h3>
+
+                <span class="rating">
+                    <i class="fa-solid fa-star"></i>
+                </span>
+
+            </div>
+
+
+            <form id="customOrderForm">
+
+                <input
+                    type="text"
+                    id="customName"
+                    placeholder="Your name"
+                    class="card-input"
+                    required
+                >
+
+
+                <input
+                    type="tel"
+                    id="customPhone"
+                    placeholder="Phone number"
+                    class="card-input"
+                    required
+                >
+
+
+                <textarea
+                    id="customDetails"
+                    placeholder="Explain the cake you need"
+                    class="card-input"
+                    rows="4"
+                    required
+                ></textarea>
+
+
+                <button
+                    type="submit"
+                    class="btn-card">
+
+                    Send Request
+
+                </button>
+
+            </form>
+
+
+            <p
+                id="customFormMessage"
+                class="form-message">
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     CART
+========================================================= -->
+
+<div class="cart-box" id="cartBox">
+
+    <h3>Your Cart</h3>
+
+
+    <div id="cartItems"></div>
+
+
+    <p class="cart-total">
+
+        TOTAL:
+        TZS
+        <span id="cartTotal">0</span>
+
+    </p>
+
+
+    <button
+        id="checkoutBtn"
+        class="checkout-btn">
+
+        Proceed to Checkout
+
+    </button>
+
+
+    <!-- =====================================================
+         CHECKOUT FORM
+    ====================================================== -->
+
+    <div
+        id="checkoutFormBox"
+        class="checkout-form-box">
+
+        <h3>Checkout</h3>
+
+
+        <form id="checkoutForm">
+
+
+            <input
+                type="text"
+                id="checkoutName"
+                placeholder="Your name"
+                class="card-input"
+                required
+            >
+
+
+            <input
+                type="tel"
+                id="checkoutPhone"
+                placeholder="Phone number"
+                class="card-input"
+                required
+            >
+
+
+            <input
+                type="text"
+                id="checkoutAddress"
+                placeholder="Delivery address"
+                class="card-input"
+                required
+            >
+
+
+            <textarea
+                id="checkoutDetails"
+                placeholder="Additional order details"
+                class="card-input"
+                rows="3"
+            ></textarea>
+
+
+            <button
+                type="submit"
+                class="btn-card">
+
+                Place Order
+
+            </button>
+
+        </form>
+
+
+        <p
+            id="checkoutMessage"
+            class="form-message">
+        </p>
+
+    </div>
+
+</div>
+
+
+<!-- =========================================================
+     FEATURED PRODUCTS
+========================================================= -->
+
+<section class="bottom-section" id="gallery">
+
+    <div class="featured-products">
+
+        <div class="section-header">
+
+            <h2>Featured Products</h2>
+
+            <div class="arrows">
+
+                <button
+                    class="arrow-btn"
+                    id="scrollLeftBtn">
+
+                    <i class="fa-solid fa-chevron-left"></i>
+
+                </button>
+
+
+                <button
+                    class="arrow-btn"
+                    id="scrollRightBtn">
+
+                    <i class="fa-solid fa-chevron-right"></i>
+
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <div
+            class="product-scroll"
+            id="productScroll">
+
+            <img src="product1.jpeg" class="product-thumb" alt="Product 1">
+            <img src="product2.jpeg" class="product-thumb" alt="Product 2">
+            <img src="product3.jpeg" class="product-thumb" alt="Product 3">
+            <img src="product4.jpeg" class="product-thumb" alt="Product 4">
+            <img src="product5.jpeg" class="product-thumb" alt="Product 5">
+            <img src="product6.jpeg" class="product-thumb" alt="Product 6">
+            <img src="product7.jpeg" class="product-thumb" alt="Product 7">
+            <img src="product8.jpeg" class="product-thumb" alt="Product 8">
+            <img src="product9.jpeg" class="product-thumb" alt="Product 9">
+            <img src="product10.jpeg" class="product-thumb" alt="Product 10">
+            <img src="product11.jpeg" class="product-thumb" alt="Product 11">
+            <img src="product12.jpeg" class="product-thumb" alt="Product 12">
+            <img src="product13.jpeg" class="product-thumb" alt="Product 13">
+            <img src="product14.jpeg" class="product-thumb" alt="Product 14">
+            <img src="product15.jpeg" class="product-thumb" alt="Product 15">
+            <img src="product16.jpeg" class="product-thumb" alt="Product 16">
+            <img src="product17.jpeg" class="product-thumb" alt="Product 17">
+            <img src="product18.jpeg" class="product-thumb" alt="Product 18">
+            <img src="product19.jpeg" class="product-thumb" alt="Product 19">
+            <img src="product20.jpeg" class="product-thumb" alt="Product 20">
+
+        </div>
+
+    </div>
+
+
+    <!-- =====================================================
+         CLIENT LOVE
+    ====================================================== -->
+
+    <div class="client-love">
+
+        <h2>Client Love</h2>
+
+
+        <div class="testimonials">
+
+
+            <div class="testimonial-card">
+
+                <img
+                    src="client1.jpeg"
+                    alt="Neston Msuku"
+                    class="client-avatar">
+
+                <p>Neston Msuku</p>
+
+                <div class="stars">
+
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+
+                </div>
+
+                <p class="testimonial-text">
+
+                    Tumependa huduma, ni bora kabisa
+                    na tunashukuru kwa kazi nzuri.
+
+                </p>
+
+            </div>
+
+
+            <div class="testimonial-card">
+
+                <img
+                    src="client2.jpeg"
+                    alt="Days Dayton"
+                    class="client-avatar">
+
+                <p>Days Dayton</p>
+
+                <div class="stars">
+
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+
+                </div>
+
+                <p class="testimonial-text">
+
+                    Asante kwa cake nzuri, ilifika
+                    kwa wakati na ilikuwa tamu sana.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     FOOTER
+========================================================= -->
+
+<footer class="footer" id="about">
+
+    <div class="footer-container">
+
+
+        <div class="footer-col">
+
+            <h3 class="footer-logo">
+                MP | Sweet Treats
+            </h3>
+
+            <p>
+
+                Tunatengeneza cakes na cookies bora
+                kwa ajili ya matukio yako maalum;
+                birthday, harusi, graduation na zaidi.
+
+            </p>
+
+        </div>
+
+
+        <div class="footer-col">
+
+            <h4>Contact Us</h4>
+
+            <p>
+                <i class="fa-solid fa-location-dot"></i>
+                Dar es Salaam, Tanzania
+            </p>
+
+            <p>
+                <i class="fa-solid fa-phone"></i>
+                0673713513
+            </p>
+
+            <p>
+                <i class="fa-solid fa-envelope"></i>
+                info@sweettreats.co.tz
+            </p>
+
+        </div>
+
+
+        <div class="footer-col">
+
+            <h4>Follow Us</h4>
+
+            <div class="social-icons">
+
+                <a
+                    href="https://instagram.com/jina_lako_la_instagram"
+                    target="_blank">
+
+                    <i class="fa-brands fa-instagram"></i>
+
+                </a>
+
+
+                <a
+                    href="https://facebook.com/jina_lako_la_facebook"
+                    target="_blank">
+
+                    <i class="fa-brands fa-facebook"></i>
+
+                </a>
+
+
+                <a
+                    href="https://wa.me/255673713513"
+                    target="_blank">
+
+                    <i class="fa-brands fa-whatsapp"></i>
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        <p>
+            &copy; 2026 Sweet Treats. All Rights Reserved.
+        </p>
+
+    </div>
+
+</footer>
+
+
+<!-- =========================================================
+     JAVASCRIPT
+========================================================= -->
+
+<script src="script.js"></script>
+
+</body>
+</html>
